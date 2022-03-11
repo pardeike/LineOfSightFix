@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using Brrainz;
+using HarmonyLib;
 using System.Collections.Generic;
 using Verse;
 using Verse.AI;
@@ -12,6 +13,8 @@ namespace LineOfSightFix
 		{
 			var harmony = new Harmony("net.pardeike.harmony.LineOfSightFix");
 			harmony.PatchAll();
+
+			CrossPromotion.Install(76561197973010050);
 		}
 	}
 
